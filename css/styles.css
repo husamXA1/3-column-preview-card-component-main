@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* Global rules */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    line-height: 1.8;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.col {
+    padding: 3em;
+}
+
+.col h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.col p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 1em 0;
+}
+
+.btn {
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    padding: 1em 2em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: hsl(0, 0%, 95%) !important;
+}
+
+/* Sedans */
+.col.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.col.sedans .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.col.sedans .btn:hover,
+.col.sedans .btn:focus,
+.col.sedans .btn:active {
+    background-color: hsl(31, 77%, 52%);
+}
+
+/* SUVs */
+.col.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.col.suvs .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.col.suvs .btn:hover,
+.col.suvs .btn:focus,
+.col.suvs .btn:active {
+    background-color: hsl(184, 100%, 22%);
+}
+
+/* Luxury */
+.col.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.col.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.col.luxury .btn:hover,
+.col.luxury .btn:focus,
+.col.luxury .btn:active {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: flex;
+    }
+    
+    .btn {
+        margin-top: 100px;
+    }
+}
